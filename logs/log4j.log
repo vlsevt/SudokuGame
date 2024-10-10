@@ -1,0 +1,118 @@
+[INFO ] 2024-06-05 20:53:00.922 [main] BacktrackingSudokuSolver - Hello world!
+[ERROR] 2024-06-12 19:57:24.706 [main] JdbcSudokuBoardDao - Could not get connection to the database
+org.postgresql.util.PSQLException: No results were returned by the query.
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:135) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.example.JdbcSudokuBoardDao.writeField(JdbcSudokuBoardDao.java:69) [classes/:?]
+	at org.example.JdbcSudokuBoardDao.write(JdbcSudokuBoardDao.java:54) [classes/:?]
+	at org.example.JdbcSudokuBoardDao.main(JdbcSudokuBoardDao.java:88) [classes/:?]
+[ERROR] 2024-06-12 20:00:10.411 [main] JdbcSudokuBoardDao - Could not get connection to the database
+org.postgresql.util.PSQLException: No results were returned by the query.
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:135) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.example.JdbcSudokuBoardDao.writeField(JdbcSudokuBoardDao.java:69) [classes/:?]
+	at org.example.JdbcSudokuBoardDao.write(JdbcSudokuBoardDao.java:54) [classes/:?]
+	at org.example.JdbcSudokuBoardDao.main(JdbcSudokuBoardDao.java:88) [classes/:?]
+[ERROR] 2024-06-12 20:00:13.986 [main] JdbcSudokuBoardDao - Could not get connection to the database
+org.postgresql.util.PSQLException: No results were returned by the query.
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:135) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.example.JdbcSudokuBoardDao.writeField(JdbcSudokuBoardDao.java:69) [classes/:?]
+	at org.example.JdbcSudokuBoardDao.write(JdbcSudokuBoardDao.java:54) [classes/:?]
+	at org.example.JdbcSudokuBoardDao.main(JdbcSudokuBoardDao.java:88) [classes/:?]
+[ERROR] 2024-06-12 20:51:03.370 [main] JdbcSudokuBoardDao - Could not get connection to the database
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:342) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.Driver.makeConnection(Driver.java:443) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.Driver.connect(Driver.java:297) ~[postgresql-42.6.0.jar:42.6.0]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683) ~[java.sql:?]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230) ~[java.sql:?]
+	at org.example.JdbcSudokuBoardDao.<init>(JdbcSudokuBoardDao.java:20) [classes/:?]
+	at org.example.JdbcSudokuBoardDao.main(JdbcSudokuBoardDao.java:111) [classes/:?]
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?]
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258) ~[postgresql-42.6.0.jar:42.6.0]
+	... 8 more
+[ERROR] 2024-06-12 20:52:02.772 [main] JdbcSudokuBoardDao - Could not find constructor for SudokuSolver
+java.lang.NoSuchMethodException: org.example.BacktrackingSudokuSolver.<init>(double,org.example.BacktrackingSudokuSolver)
+	at java.base/java.lang.Class.getConstructor0(Class.java:3761) ~[?:?]
+	at java.base/java.lang.Class.getConstructor(Class.java:2442) ~[?:?]
+	at org.example.JdbcSudokuBoardDao.read(JdbcSudokuBoardDao.java:40) [classes/:?]
+	at org.example.JdbcSudokuBoardDao.main(JdbcSudokuBoardDao.java:113) [classes/:?]
+[ERROR] 2024-06-12 20:52:50.257 [main] JdbcSudokuBoardDao - Could not find constructor for SudokuSolver
+java.lang.NoSuchMethodException: org.example.BacktrackingSudokuSolver.<init>(double,org.example.BacktrackingSudokuSolver)
+	at java.base/java.lang.Class.getConstructor0(Class.java:3761) ~[?:?]
+	at java.base/java.lang.Class.getConstructor(Class.java:2442) ~[?:?]
+	at org.example.JdbcSudokuBoardDao.read(JdbcSudokuBoardDao.java:40) [classes/:?]
+	at org.example.JdbcSudokuBoardDao.main(JdbcSudokuBoardDao.java:113) [classes/:?]
+[ERROR] 2024-06-12 20:53:55.183 [main] JdbcSudokuBoardDao - Could not find constructor for SudokuSolver
+java.lang.NoSuchMethodException: org.example.BacktrackingSudokuSolver.<init>(double,org.example.BacktrackingSudokuSolver)
+	at java.base/java.lang.Class.getConstructor0(Class.java:3761) ~[?:?]
+	at java.base/java.lang.Class.getConstructor(Class.java:2442) ~[?:?]
+	at org.example.JdbcSudokuBoardDao.read(JdbcSudokuBoardDao.java:40) [classes/:?]
+	at org.example.JdbcSudokuBoardDao.main(JdbcSudokuBoardDao.java:113) [classes/:?]
+[ERROR] 2024-06-12 20:56:10.677 [main] JdbcSudokuBoardDao - Could not get connection to the database
+org.postgresql.util.PSQLException: Operation requires a scrollable ResultSet, but this ResultSet is FORWARD_ONLY.
+	at org.postgresql.jdbc.PgResultSet.checkScrollable(PgResultSet.java:316) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.previous(PgResultSet.java:993) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.example.JdbcSudokuBoardDao.read(JdbcSudokuBoardDao.java:42) [classes/:?]
+	at org.example.JdbcSudokuBoardDao.main(JdbcSudokuBoardDao.java:113) [classes/:?]
+[ERROR] 2024-06-12 20:56:57.432 [main] JdbcSudokuBoardDao - Could not get connection to the database
+org.postgresql.util.PSQLException: Operation requires a scrollable ResultSet, but this ResultSet is FORWARD_ONLY.
+	at org.postgresql.jdbc.PgResultSet.checkScrollable(PgResultSet.java:316) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.previous(PgResultSet.java:993) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.example.JdbcSudokuBoardDao.read(JdbcSudokuBoardDao.java:42) [classes/:?]
+	at org.example.JdbcSudokuBoardDao.main(JdbcSudokuBoardDao.java:113) [classes/:?]
+[ERROR] 2024-06-12 21:15:14.707 [main] JdbcSudokuBoardDao - Could not get connection to the database
+org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "sudoku_board_field_sudoku_board_name_field_row_field_column_key"
+  Detail: Key (sudoku_board_name, field_row, field_column)=(123, 0, 0) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.example.JdbcSudokuBoardDao.writeField(JdbcSudokuBoardDao.java:97) [classes/:?]
+	at org.example.JdbcSudokuBoardDao.write(JdbcSudokuBoardDao.java:82) [classes/:?]
+	at org.example.JdbcSudokuBoardDao.main(JdbcSudokuBoardDao.java:130) [classes/:?]
+[ERROR] 2024-06-12 21:16:30.828 [main] JdbcSudokuBoardDao - SQL Exception
+org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "sudoku_board_field_sudoku_board_name_field_row_field_column_key"
+  Detail: Key (sudoku_board_name, field_row, field_column)=(123, 0, 0) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.example.JdbcSudokuBoardDao.writeField(JdbcSudokuBoardDao.java:97) [classes/:?]
+	at org.example.JdbcSudokuBoardDao.write(JdbcSudokuBoardDao.java:82) [classes/:?]
+	at org.example.JdbcSudokuBoardDao.main(JdbcSudokuBoardDao.java:129) [classes/:?]
+[INFO ] 2024-10-10 23:45:58.064 [JavaFX Application Thread] SudokuController - Starting game with difficulty: EASY
+[INFO ] 2024-10-10 23:47:00.806 [JavaFX Application Thread] SudokuController - Game started with difficulty: EASY
+[INFO ] 2024-10-10 23:50:02.740 [JavaFX Application Thread] SudokuController - Starting game with difficulty: EASY
+[INFO ] 2024-10-10 23:50:03.149 [JavaFX Application Thread] SudokuController - Game started with difficulty: EASY
+[INFO ] 2024-10-10 23:50:21.413 [JavaFX Application Thread] SudokuController - Starting game with difficulty: EASY
+[INFO ] 2024-10-10 23:50:21.808 [JavaFX Application Thread] SudokuController - Game started with difficulty: EASY
+[INFO ] 2024-10-10 23:50:32.180 [JavaFX Application Thread] SudokuController - Starting game with difficulty: EASY
+[INFO ] 2024-10-10 23:50:32.582 [JavaFX Application Thread] SudokuController - Game started with difficulty: EASY
+[INFO ] 2024-10-10 23:50:46.152 [JavaFX Application Thread] SudokuController - Starting game with difficulty: EASY
+[INFO ] 2024-10-10 23:50:46.559 [JavaFX Application Thread] SudokuController - Game started with difficulty: EASY
+[INFO ] 2024-10-10 23:50:59.370 [JavaFX Application Thread] SudokuController - Starting game with difficulty: EASY
+[INFO ] 2024-10-10 23:51:16.979 [JavaFX Application Thread] SudokuController - Game started with difficulty: EASY
+[INFO ] 2024-10-10 23:55:24.458 [JavaFX Application Thread] SudokuController - Starting game with difficulty: EASY
+[INFO ] 2024-10-10 23:55:46.871 [JavaFX Application Thread] SudokuController - Game started with difficulty: EASY
+[INFO ] 2024-10-11 02:00:06.135 [JavaFX Application Thread] SudokuController - Starting game with difficulty: EASY
+[INFO ] 2024-10-11 02:00:08.792 [JavaFX Application Thread] SudokuController - Game started with difficulty: EASY
+[INFO ] 2024-10-11 02:01:53.692 [JavaFX Application Thread] SudokuController - Starting game with difficulty: EASY
+[INFO ] 2024-10-11 02:01:54.294 [JavaFX Application Thread] SudokuController - Game started with difficulty: EASY
+[INFO ] 2024-10-11 02:02:17.743 [JavaFX Application Thread] SudokuController - Starting game with difficulty: EASY
+[INFO ] 2024-10-11 02:02:20.375 [JavaFX Application Thread] SudokuController - Game started with difficulty: EASY
