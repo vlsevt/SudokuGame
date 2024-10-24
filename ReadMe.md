@@ -29,7 +29,6 @@
     <li>Clone the repository:</li>
     <pre><code>git clone https://github.com/vlsevt/SudokuGame.git</code></pre>
     <li>Open the project in your favorite IDE.</li>
-    <li>Ensure you have Java 21 installed.</li>
     <li>Build the project using Maven:</li>
     <pre><code>mvn clean install</code></pre>
     <li>Run the application.</li>
