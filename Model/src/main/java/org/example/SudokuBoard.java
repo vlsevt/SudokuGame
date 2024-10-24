@@ -108,6 +108,10 @@ public class SudokuBoard implements Cloneable, Serializable {
         sudokuSolver.solve(this);
     }
 
+    public boolean solveable() {
+        return sudokuSolver.solvable(this);
+    }
+
     public int get(int row, int col) {
         return board[row][col].getValue();
     }

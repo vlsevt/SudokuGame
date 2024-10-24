@@ -37,6 +37,11 @@ public class BacktrackingSudokuSolver implements SudokuSolver, Cloneable, Serial
         recursiveSolve(board);
     }
 
+    public boolean solvable(SudokuBoard board) {
+        SudokuBoard board1 = board.clone();
+        return recursiveSolve(board1);
+    }
+
     private boolean recursiveSolve(SudokuBoard board) {
         for (int row = 0; row < 9; row++) {
             for (int col = 0; col < 9; col++) {

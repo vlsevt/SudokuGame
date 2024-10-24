@@ -53,7 +53,7 @@ public class SudokuController implements Initializable {
 
     private void setupComboBoxes() {
         difficultyComboBox.setItems(FXCollections.observableArrayList(Difficulty.values()));
-        difficultyComboBox.setConverter(new StringConverter<Difficulty>() {
+        difficultyComboBox.setConverter(new StringConverter<>() {
             @Override
             public String toString(Difficulty difficulty) {
                 if (difficulty == null) return "";
@@ -104,7 +104,7 @@ public class SudokuController implements Initializable {
     }
 
     @FXML
-    protected void handleStartGameAction(ActionEvent event) {
+    protected void handleStartGameAction() {
         Difficulty selectedDifficulty = difficultyComboBox.getValue();
         if (selectedDifficulty != null) {
             logger.info("Starting game with difficulty: " + selectedDifficulty);
@@ -116,7 +116,7 @@ public class SudokuController implements Initializable {
     }
 
     @FXML
-    protected void handleLoadGameFromSaveAction(ActionEvent event) {
+    protected void handleLoadGameFromSaveAction() {
         FileChooser fileChooser = new FileChooser();
         FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Sudoku files (*.sudoku)", "*.sudoku");
         fileChooser.getExtensionFilters().add(extFilter);
@@ -135,6 +135,8 @@ public class SudokuController implements Initializable {
                     locale = new Locale("en", "US");
                 }
                 ResourceBundle passedLanguage = ResourceBundle.getBundle("Messages", locale);
+                System.out.println(sudokuGameData.getSudokuBoard());
+                System.out.println(sudokuGameData.getDifficulty());
                 loadGame(sudokuGameData.getSudokuBoard(), sudokuGameData.getDifficulty(), passedLanguage);
                 logger.info("Loaded game from save file: " + path);
             } catch (Exception e) {

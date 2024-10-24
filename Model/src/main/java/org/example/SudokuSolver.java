@@ -18,6 +18,7 @@ package org.example;
 
 public interface SudokuSolver extends Cloneable {
     void solve(SudokuBoard board);
+    boolean solvable(SudokuBoard board);
 
     SudokuSolver clone();
 }
